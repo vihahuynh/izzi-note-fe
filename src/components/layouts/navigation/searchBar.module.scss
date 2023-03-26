@@ -1,0 +1,31 @@
+@import '../../../global.scss';
+
+.searchBar {
+  margin: 0 5.6rem;
+  height: 4.6rem;
+  width: 50vw;
+  border-radius: 5px;
+  overflow: hidden;
+
+  //   &:focus &__input {
+  //     background-color: #fff;
+  //   }
+
+  &Input {
+    width: 100%;
+    height: 100%;
+    background-color: $color-grey-light;
+    padding: 0 2rem;
+    border: none;
+    outline: none;
+    font-family: inherit;
+
+    &:focus {
+      background-color: #fff;
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  &Icon {
+  }
+}
