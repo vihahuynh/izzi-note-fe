@@ -1,0 +1,40 @@
+@import '../../global.scss';
+
+.form {
+  // small form
+  display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+
+  // large form
+  flex-direction: column;
+
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+    0 2px 6px 2px rgba(60, 64, 67, 0.15);
+  border-radius: 0.8rem;
+
+  &Title {
+    display: inline-block;
+    font-size: 1.6rem;
+    margin: 1.2rem 1.6rem;
+    color: $color-grey-dark;
+    font-weight: 600;
+  }
+
+  &Input {
+    display: inline-block;
+    border: none;
+    outline: none;
+    margin: 1.2rem 1.6rem;
+    font-family: inherit;
+    font-weight: 500;
+
+    &Content {
+      white-space: pre-wrap;
+    }
+  }
+
+  &::-webkit-input-placeholder {
+    color: $color-grey-dark;
+  }
+}

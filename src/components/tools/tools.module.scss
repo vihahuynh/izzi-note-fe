@@ -72,12 +72,14 @@
   &ItemTooltip {
     padding: 5px;
     border-radius: 3px;
-    background-color: $color-grey;
+    background-color: $color-grey-dark;
+    opacity: 0.71;
     position: absolute;
     color: #fff;
     font-size: 1.2rem;
     left: 50%;
     transform: translateX(-50%);
+    white-space: nowrap;
     @include hidden;
 
     &MediumBottom {

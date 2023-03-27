@@ -3,12 +3,32 @@ import styles from './tools.module.scss';
 
 import ToolItem from './toolItem';
 
-const ToolList = () => {
+interface IToolListProps {
+  size?: string;
+  position?: string;
+}
+
+const ToolList = ({ size = 'medium', position = 'bottom' }: IToolListProps) => {
   return (
     <ul className={styles.toolList}>
-      <ToolItem />
-      <ToolItem />
-      <ToolItem />
+      <ToolItem
+        size={size}
+        position={position}
+        content='icon'
+        tooltip='tooltip'
+      />
+      <ToolItem
+        size={size}
+        position={position}
+        content='icon'
+        tooltip='tooltip'
+      />
+      <ToolItem
+        size={size}
+        position={position}
+        content='icon'
+        tooltip='tooltip'
+      />
     </ul>
   );
 };

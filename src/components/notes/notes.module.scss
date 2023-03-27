@@ -1,0 +1,78 @@
+@import '../../global.scss';
+
+.notes {
+  columns: 3;
+
+  &ItemBox {
+    break-inside: avoid;
+  }
+
+  &Item {
+    display: flex;
+    margin: 1.6rem;
+    padding: 1.6rem 1.2rem;
+    width: 24rem;
+    min-height: 30rem;
+    background-color: $color-yellow-light;
+    border-radius: 0.8rem;
+
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    position: relative;
+    transition: all 0.3s;
+
+    &SelectBtn {
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-30%, -30%);
+      height: 2rem;
+      width: 2rem;
+      background-color: $color-grey;
+      border-radius: 50%;
+      @include hidden;
+    }
+
+    &Pin {
+      position: absolute !important;
+      top: 1rem;
+      right: 1rem;
+      @include hidden;
+    }
+
+    &Bottom {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      row-gap: 1rem;
+    }
+
+    &SubInfo {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 6px;
+    }
+
+    &Tools {
+      width: 100%;
+      display: flex;
+      justify-content: space-between !important;
+
+      @include hidden;
+    }
+
+    &:hover &SelectBtn,
+    &:hover &Pin,
+    &:hover &Tools {
+      @include visible;
+    }
+
+    &:hover {
+      box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
+        0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    }
+  }
+}

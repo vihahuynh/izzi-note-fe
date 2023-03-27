@@ -1,7 +1,9 @@
 import Navigation from './components/layouts/navigation/navigation';
 import Sidebar from './components/layouts/sidebar/sidebar';
+import NotesList from './components/notes/notesList';
 
 import styles from './App.module.scss';
+import Form from './components/form/form';
 
 function App() {
   return (
@@ -9,7 +11,10 @@ function App() {
       <Navigation />
       <main>
         <Sidebar />
-        <div className={styles.main}></div>
+        <div className={styles.main}>
+          <Form />
+          <NotesList />
+        </div>
       </main>
     </div>
   );
