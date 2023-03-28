@@ -1,14 +1,15 @@
+import ILabel from '../../models/label.interface';
 import ToolItem from '../tools/toolItem';
 import styles from './label.module.scss';
 
 interface ILabelItemProps {
-  label: string;
+  label: ILabel;
 }
 
 const LabelItem = ({ label }: ILabelItemProps) => {
   return (
     <li className={styles.labelsItem}>
-      <p className={styles.lablesText}>{label}</p>
+      <p className={styles.lablesText}>{label.name}</p>
       <span className={styles.labelsItemRemoveBtn}>
         <ToolItem
           size='tiny'

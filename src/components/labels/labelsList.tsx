@@ -1,12 +1,18 @@
 import LabelItem from './labelItem';
 
 import styles from './label.module.scss';
+import ILabel from '../../models/label.interface';
 
-const LabelsList = () => {
+interface ILabelListProps {
+  labels: ILabel[];
+}
+
+const LabelsList = ({ labels }: ILabelListProps) => {
   return (
     <ul className={styles.labels}>
-      <LabelItem label='tieu' />
-      <LabelItem label='mewo' />
+      {labels.map((label) => (
+        <LabelItem key={label.id} label={label} />
+      ))}
     </ul>
   );
 };

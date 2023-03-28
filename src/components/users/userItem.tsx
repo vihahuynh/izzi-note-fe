@@ -1,15 +1,19 @@
+import { IUser } from '../../models/user.interface';
 import styles from './users.module.scss';
 
 interface IUserItemProps {
-  username: string;
-  avatarImg: string;
+  user: IUser;
 }
 
-const UserItem = ({ username, avatarImg }: IUserItemProps) => {
+const UserItem = ({ user }: IUserItemProps) => {
   return (
     <li className={styles.usersItem}>
-      <span className={styles.usersItemTooltip}>{username}</span>
-      <img className={styles.usersItemImg} src={avatarImg} alt={username} />
+      <span className={styles.usersItemTooltip}>{user.username}</span>
+      <img
+        className={styles.usersItemImg}
+        src={user.email}
+        alt={user.username}
+      />
     </li>
   );
 };
