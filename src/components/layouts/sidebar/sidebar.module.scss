@@ -1,7 +1,7 @@
 @import '../../../global.scss';
 
 .sidebar {
-  width: 28rem;
+  width: 25rem;
   flex-shrink: 0;
 
   &List {
@@ -9,7 +9,7 @@
   }
 
   &Item {
-    padding: 0 1rem;
+    padding: 0 1rem 0 2rem;
     height: 4.5rem;
     display: flex;
     align-items: center;
@@ -19,6 +19,8 @@
     border-radius: 0 10rem 10rem 0;
     transition: all 0.3s;
     cursor: pointer;
+    column-gap: 2rem;
+    font-weight: 500;
 
     &:hover {
       background-color: $color-grey-light;
@@ -34,8 +36,13 @@
 }
 
 .icon {
+  fill: $color-grey;
   display: inline-block;
-  height: 4rem;
-  width: 4rem;
+  height: 2rem;
+  width: 2rem;
   margin-right: 1rem;
+}
+
+.iconActive {
+  fill: $color-grey-dark;
 }

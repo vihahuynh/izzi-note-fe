@@ -12,8 +12,8 @@ export const lightColors = {
   gray: '#E7EAED',
 };
 
-const backgroundImageUrl =
-  'https://www.gstatic.com/keep/backgrounds/type_theme_thumb_0615.svg';
+// const backgroundImageUrl =
+//   'https://www.gstatic.com/keep/backgrounds/type_theme_thumb_0615.svg';
 
 export const lightBackgroundImages = {
   groceries:
