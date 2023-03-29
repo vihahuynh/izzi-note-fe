@@ -7,6 +7,11 @@ import styles from './notes.module.scss';
 import classnames from 'classnames';
 import { INote } from '../../models/note.interface';
 
+import {
+  lightBackgroundImages,
+  lightColors,
+} from '../../utils/backgroundOptions';
+
 interface INoteItemProps {
   note: INote;
 }
@@ -14,7 +19,15 @@ interface INoteItemProps {
 const NoteItem = ({ note }: INoteItemProps) => {
   return (
     <div className={styles.notesItemBox}>
-      <div className={styles.notesItem}>
+      <div
+        className={styles.notesItem}
+        style={{
+          backgroundColor: lightColors[note.color],
+          backgroundImage: `url(${
+            lightBackgroundImages[note.backgroundImage]
+          })`,
+        }}
+      >
         <i className={styles.notesItemSelectBtn}>@</i>
         <span className={styles.notesItemPin}>
           <ToolItem size='small' position='bottom' content='@' tooltip='pin' />
