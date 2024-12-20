@@ -1,0 +1,52 @@
+@use "../../../utilities/variables" as v;
+
+.button {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 100%;
+  margin: 4px 0;
+  background-color: #fff;
+  position: relative;
+  transition: all 0.3s;
+  outline: none;
+  border: none;
+
+  &:hover {
+    background-color: v.$light-grey;
+  }
+}
+
+.lines {
+  background-color: v.$dark-grey;
+  width: 2.4rem;
+  height: 2px;
+  display: block;
+
+  &::before,
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 2.4rem;
+    height: 2px;
+    background-color: v.$dark-grey;
+    position: absolute;
+    left: 1.2rem;
+    transition: all 0.3s;
+  }
+
+  &::before {
+    top: 1.7rem;
+  }
+
+  &::after {
+    bottom: 1.7rem;
+  }
+}
+
+.button:hover .lines::before {
+  top: 1.5rem;
+}
+
+.button:hover .lines::after {
+  bottom: 1.5rem;
+}

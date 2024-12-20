@@ -1,0 +1,19 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 30rem auto;
+  grid-template-rows: 6.4rem auto;
+}
+
+.menu {
+  background-color: greenyellow;
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+.notes {
+  background-color: blueviolet;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
