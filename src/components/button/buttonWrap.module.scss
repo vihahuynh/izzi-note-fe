@@ -1,0 +1,23 @@
+@use "../../utilities/variables" as v;
+
+.button {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 100%;
+  margin: 4px 0;
+  background-color: #fff;
+  position: relative;
+  transition: all 0.3s;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border: none;
+    background-color: v.$light-grey;
+  }
+}

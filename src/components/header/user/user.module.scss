@@ -1,0 +1,14 @@
+@use "../../../utilities/variables" as v;
+
+.user {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.avatar {
+  width: 4rem;
+  border-radius: 100%;
+  outline: v.$primary-color solid 2px;
+  outline-offset: 3px;
+}

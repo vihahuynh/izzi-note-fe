@@ -1,23 +1,5 @@
 @use "../../../utilities/variables" as v;
 
-.button {
-  width: 4.8rem;
-  height: 4.8rem;
-  border-radius: 100%;
-  margin: 4px 0;
-  background-color: #fff;
-  position: relative;
-  transition: all 0.3s;
-  outline: none;
-  border: none;
-
-  &:hover, &:focus {
-    outline: none;
-    border: none;
-    background-color: v.$light-grey;
-  }
-}
-
 .lines {
   background-color: v.$dark-grey;
   width: 2.4rem;
@@ -45,10 +27,3 @@
   }
 }
 
-.button:hover .lines::before {
-  top: 1.5rem;
-}
-
-.button:hover .lines::after {
-  bottom: 1.5rem;
-}

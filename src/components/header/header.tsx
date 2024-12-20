@@ -1,6 +1,8 @@
 import BurgerButton from "./burgerButton/burgerButton";
 import classes from "./header.module.scss";
 import logo from "./../../assets/images/logo.jpg";
+import User from "./user/user";
+import ToolBar from "./toolBar/toolBar";
 
 const Header = () => {
     return (
@@ -14,8 +16,8 @@ const Header = () => {
                 <input />
             </div>
             <div className={classes.header__right}>
-                <div>tools</div>
-                <div>user</div>
+                <ToolBar />
+                <User />
             </div>
         </div>
     );

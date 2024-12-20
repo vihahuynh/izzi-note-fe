@@ -1,9 +1,12 @@
-import classes from './burgerButton.module.scss'
+import ButtonWrap from "../../button/buttonWrap";
+import classes from "./burgerButton.module.scss";
 
 const BurgerButton = () => {
-    return <button className={classes.button}>
-        <span className={classes.lines}></span>
-    </button>
-}
+  return (
+    <ButtonWrap>
+      <span className={classes.lines} />
+    </ButtonWrap>
+  );
+};
 
-export default BurgerButton
+export default BurgerButton;
