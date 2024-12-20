@@ -1,9 +1,46 @@
 .header {
-    grid-row: 1 / 2;
-    grid-column: 1 / -1;
-    margin: 0.8rem;
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
+  margin: 0.8rem;
 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__left {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 2rem;
   }
+  
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+  }
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-right: 4rem;
+
+  img {
+    width: 4rem;
+    border-radius: 100%;
+  }
+
+  span {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #f2cc63;
+    letter-spacing: 5px;
+  }
+}
+
+

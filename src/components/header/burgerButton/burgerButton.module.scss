@@ -11,7 +11,9 @@
   outline: none;
   border: none;
 
-  &:hover {
+  &:hover, &:focus {
+    outline: none;
+    border: none;
     background-color: v.$light-grey;
   }
 }
