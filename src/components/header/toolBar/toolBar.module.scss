@@ -1,0 +1,11 @@
+@use "../../../utilities/variables" as v;
+
+.toolbar {
+    display: flex;
+}
+
+.icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    color: v.$dark-grey;
+}
