@@ -1,0 +1,41 @@
+@use "../../utilities/variables" as v;
+
+.sideBarItem {
+  display: flex;
+  height: 4.8rem;
+  width: 100%;
+  border-radius: 0 5rem 5rem 0;
+  outline: none;
+  border: none;
+  align-items: center;
+  justify-content: flex-start;
+  transition: all 0.1s;
+
+  &:focus {
+    outline: none;
+  }
+
+  &__icon {
+    margin-right: 3rem;
+    margin-left: 1rem;
+  }
+
+  &__title {
+    font-size: 1.4rem;
+    color: v.$dark-grey;
+  }
+}
+
+.sideBarItem[data-active="false"]  {
+  background-color: transparent;
+}
+
+.sideBarItem[data-active="true"]  {
+  background-color: v.$secondary-color;
+}
+
+.sideBarItem[data-active="false"]:hover {
+  &:hover {
+    background-color: v.$light-grey ;
+  }
+}

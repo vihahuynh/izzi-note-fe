@@ -6,14 +6,15 @@ import { CiLight } from "react-icons/ci";
 
 import ToolBarItem from "./toolBarItem";
 import classes from "./toolBar.module.scss";
+import iconClasses from "./../../icon/icon.module.scss";
 
 const TOOLS = [
   {
-    icon: <CiGrid2H className={classes.icon} />,
+    icon: <CiGrid2H className={iconClasses.icon} />,
     tooltip: "List view",
   },
   {
-    icon: <CiDark className={classes.icon} />,
+    icon: <CiDark className={iconClasses.icon} />,
     tooltip: "Dark mode",
   },
 ];
@@ -22,7 +23,7 @@ const ToolBar = () => {
   return (
     <div className={classes.toolbar}>
       {TOOLS.map((item) => (
-        <ToolBarItem icon={item.icon} tooltip={item.tooltip} />
+        <ToolBarItem {...item} />
       ))}
     </div>
   );

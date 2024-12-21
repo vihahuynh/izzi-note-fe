@@ -1,29 +1,5 @@
 @use "../../../utilities/variables" as v;
 
-.lines {
-  background-color: v.$dark-grey;
-  width: 2.4rem;
-  height: 2px;
-  display: block;
-
-  &::before,
-  &::after {
-    content: "";
-    display: inline-block;
-    width: 2.4rem;
-    height: 2px;
-    background-color: v.$dark-grey;
-    position: absolute;
-    left: 1.2rem;
-    transition: all 0.3s;
-  }
-
-  &::before {
-    top: 1.7rem;
-  }
-
-  &::after {
-    bottom: 1.7rem;
-  }
+.burgerButton {
+  margin-left: 0.5rem;
 }
-
