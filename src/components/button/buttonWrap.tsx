@@ -1,7 +1,15 @@
-import classes from './buttonWrap.module.scss';
+import classes from "./buttonWrap.module.scss";
 
-const ButtonWrap = ({ children }: { children: React.ReactNode }) => {
-    return <button className={classes.button}>{children}</button>
+interface IButtonWrapProps {
+  children: React.ReactNode;
+  customClassName?: string;
 }
 
-export default ButtonWrap
+const ButtonWrap = ({ children, customClassName }: IButtonWrapProps) => {
+  const className = customClassName
+    ? `${classes.button} ${customClassName}`
+    : classes.button;
+  return <button className={className}>{children}</button>;
+};
+
+export default ButtonWrap;

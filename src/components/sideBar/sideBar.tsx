@@ -12,12 +12,12 @@ import { CiSaveDown2 } from "react-icons/ci";
 
 const SIDE_BAR_TOP = [
   {
-    icon: <CiStickyNote className={iconClasses.icon} />,
+    icon: <CiStickyNote className={iconClasses['icon--large']} />,
     title: "Notes",
     isActive: false,
   },
   {
-    icon: <CiBellOn className={iconClasses.icon} />,
+    icon: <CiBellOn className={iconClasses['icon--large']} />,
     title: "Reminder",
     isActive: true,
   },

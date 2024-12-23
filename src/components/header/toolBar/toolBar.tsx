@@ -10,11 +10,11 @@ import iconClasses from "./../../icon/icon.module.scss";
 
 const TOOLS = [
   {
-    icon: <CiGrid2H className={iconClasses.icon} />,
+    icon: <CiGrid2H className={iconClasses['icon--large']} />,
     tooltip: "List view",
   },
   {
-    icon: <CiDark className={iconClasses.icon} />,
+    icon: <CiDark className={iconClasses['icon--large']} />,
     tooltip: "Dark mode",
   },
 ];

@@ -1,5 +1,6 @@
 import ButtonWrap from "../../button/buttonWrap";
 import TooltipWrap from "../../tooltip/tooltipWrap";
+import classes from "./toolBarItem.module.scss";
 
 interface IToolbarItemProps {
   icon: React.ReactNode;
@@ -9,7 +10,7 @@ interface IToolbarItemProps {
 const ToolBarItem = ({ icon, tooltip }: IToolbarItemProps) => {
   return (
     <TooltipWrap tooltip={tooltip}>
-      <ButtonWrap>{icon}</ButtonWrap>
+      <ButtonWrap customClassName={classes.toolBarItemBtn}>{icon}</ButtonWrap>
     </TooltipWrap>
   );
 };

@@ -1,0 +1,38 @@
+@use '../../utilities/variables' as v;
+
+.container {
+  border-radius: 1rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 3px 0;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+
+  &--top {
+    border-bottom: 1px solid v.$light-grey;
+  }
+}
+
+.colorBtn, .urlBtn {
+  border: 2px solid v.$light-grey;
+
+  &:hover {
+    border: 2px solid black;
+  }
+}
+
+.colorBtn {
+  width: 3rem;
+  height: 3rem;
+
+}
+
+.urlBtn {
+  width: 4rem;
+  height: 4rem;
+
+}

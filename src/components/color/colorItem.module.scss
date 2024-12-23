@@ -1,0 +1,21 @@
+.color {
+  width: 3rem;
+  height: 3rem;
+}
+
+.url {
+  width: 4rem;
+  height: 4rem;
+}
+
+.color,
+.url {
+  border-radius: 20rem;
+  display: inline-block;
+  border: 2px solid white;
+
+
+  &:hover {
+    border: 2px solid black;
+  }
+}

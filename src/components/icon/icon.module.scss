@@ -1,7 +1,15 @@
 @use "../../utilities/variables" as v;
 
 .icon {
+  color: v.$dark-grey;
+
+  &--large {
     width: 3rem;
     height: 3rem;
-    color: v.$dark-grey;
+  }
+
+  &--medium {
+    width: 2rem;
+    height: 2rem;
+  }
 }

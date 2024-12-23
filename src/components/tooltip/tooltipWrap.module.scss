@@ -1,22 +1,23 @@
 @use "../../utilities/variables" as v;
 
 .container {
-    position: relative;
+  position: relative;
 
-    &__tooltip {
-        background-color: v.$dark-grey;
-        padding: 4px 8px;
-        border-radius: 5px;
-        color: #fff;
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        white-space: nowrap;
-        visibility: hidden;
-    }
+  &__tooltip {
+    background-color: v.$dark-grey;
+    padding: 4px 8px;
+    border-radius: 5px;
+    color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    visibility: hidden;
+    z-index: 100;
+  }
 }
 
 .container:hover .container__tooltip {
-   visibility: visible;
+  visibility: visible;
 }
